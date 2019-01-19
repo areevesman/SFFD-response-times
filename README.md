@@ -8,13 +8,12 @@ The [data](https://www.kaggle.com/datasf/san-francisco) comes from the San Franc
 
 ## Progress
 
-A random forest regression model was fit a few variables from the `sfpd_service_calls` table. They were `battalion`, `station_area`, `call_type`, and `zipcode_of_incident`.
-
+A random forest regression model was fit a few variables from the `sfpd_service_calls` table. They were `battalion`, `station_area`, `call_type`, and `zipcode_of_incident`. [This](notebooks/sffd_data_ml_notebook.ipynb) notebook outlines our process.
 ## Possible Todo's:
 
 - Use the Google Routes API to get distances and time estimates between each fire station and the addess of the incident.
 - Cluster the categorical variables in `sfpd_service_calls` that have a large number of categories. For example, a table of summary statistics was generated about each of the fire stations, this could be used to do clustering and reduce the number of categories.
-- Use the data in the `sf_pd_incidents` table to get aggregates of crime based on addresses. The addresses can (hopefully) be used to join this data with the `sffp_service_calls`.
+- Use the data in the `sfpd_incidents` table to get aggregates of crime based on addresses. The addresses can (hopefully) be used to join this data with the `sffp_service_calls`.
 - Generate variables like the year, month, day and hour of that the call was received by the fire department.
 - If time allows (lol), look into joining the rest of the tables in a similar fashion as the crime table
 
@@ -24,4 +23,4 @@ We hypothesize that the data from the Google Routes API would be the most useful
 
 The distances and time estimates would allow us to do something simple like building a regression model using just these two features. Something like this would give interpretable coefficients that measure how one could scale the distance and estimated driving time for a regular driver to figure out what that time looks like for an ambulance or fire truck.
 
-In addition to this simple model, data from the `sffd_service_calls` and `sfpd` incidents tables should be used to make more accurate predictions.
+In addition to this simple model, data from the `sffd_service_calls` and `sfpd_incidents` incidents tables should be used to make more accurate predictions.
