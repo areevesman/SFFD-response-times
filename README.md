@@ -23,4 +23,4 @@ We hypothesize that the data from the Google Routes API would be the most useful
 
 The distances and time estimates would allow us to do something simple like building a regression model using just these two features. Something like this would give interpretable coefficients that measure how one could scale the distance and estimated driving time for a regular driver to figure out what that time looks like for an ambulance or fire truck.
 
-In addition to this simple model, data from the `sffd_service_calls` and `sfpd_incidents` incidents tables should be used to make more accurate predictions.
+In addition to this simple model, data from the `sffd_service_calls` and `sfpd_incidents` tables should be used to make more accurate predictions.
