@@ -11,7 +11,7 @@ The [data](https://www.kaggle.com/datasf/san-francisco) comes from the San Franc
 A random forest regression model was fit a few variables from the `sfpd_service_calls` table. They were `battalion`, `station_area`, `call_type`, and `zipcode_of_incident`. [This](notebooks/sffd_data_ml_notebook.ipynb) notebook outlines our process.
 ## Possible Todo's:
 
-- Use the Google Routes API to get distances and time estimates between each fire station and the addess of the incident.
+- Use the [Google Routes API](https://developers.google.com/maps/documentation/distance-matrix/intro) to get distances and time estimates between each fire station and the addess of the incident. Given a destination and origin, an http request is sent for a json file that contains the variables of interest. A departure time can also be specified (must be "now" or in the future, so this probably is not worth doing at first)
 - Cluster the categorical variables in `sfpd_service_calls` that have a large number of categories. For example, a table of summary statistics was generated about each of the fire stations, this could be used to do clustering and reduce the number of categories.
 - Use the data in the `sfpd_incidents` table to get aggregates of crime based on addresses. The addresses can (hopefully) be used to join this data with the `sffp_service_calls`.
 - Generate variables like the year, month, day and hour of that the call was received by the fire department.
