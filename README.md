@@ -21,6 +21,6 @@ A random forest regression model was fit a few variables from the `sfpd_service_
 
 We hypothesize that the data from the Google Routes API would be the most useful features when modeling response times. Without this information, we do not have the physical distance between fire stations and incidents. In addition, Google gives an estimate of the time it will take to drive between the two locations (just like if one was to use Google Maps on their phone). 
 
-The distances and time estimates would allow us to do something simple like building a regression model using just these two features. Something like this would give interpretable coefficients that measure how one could scale the distance and estimated driving time for a regular driver to figure out what that time looks like for an ambulance or fire truck.
+The distances and time estimates would allow us to do something simple like building a linear regression model using just these two features. Something like this would give interpretable coefficients that measure how one could scale the distance and estimated driving time for a regular driver to figure out what that time looks like for an ambulance or fire truck.
 
 In addition to this simple model, data from the `sffd_service_calls` and `sfpd_incidents` tables should be used to make more accurate predictions.
