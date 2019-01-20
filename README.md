@@ -13,7 +13,7 @@ A random forest regression model was fit a few variables from the `sfpd_service_
 
 - Use the [Google Routes API](https://developers.google.com/maps/documentation/distance-matrix/intro) to get distances and time estimates between each fire station and the addess of the incident. Given a destination and origin, an http request is sent for a json object that contains the variables of interest. A departure time can also be specified (must be "now" or in the future, so this probably is not worth doing at first)
 - Cluster the fire_stations (`station_area`) in `sfpd_service_calls` and put some `call_type`'s in an "other" category. For example, a table of summary statistics was generated about each of the fire stations, this could be used to do clustering.
-- Use the data in the `sfpd_incidents` table to get aggregates of crime based on addresses. The addresses can (hopefully) be used to join this data with the `sffp_service_calls`.
+- Use the data in the `sfpd_incidents` table to get aggregates of crime based on addresses. The addresses can (hopefully) be used to join this data with the `sffd_service_calls`.
 - Generate variables like the year, month, day and hour of that the call was received by the fire department.
 - If time allows (lol), look into joining the rest of the tables in a similar fashion as the crime table
 
