@@ -18,7 +18,7 @@ Features for `day_of_week` and `hour_of_day` were created from the original data
 - Cluster the fire_stations (`station_area`) in `sfpd_service_calls` and put some `call_type`'s in an "other" category. For example, a table of summary statistics was generated about each of the fire stations, this could be used to do clustering.
 - Use the data in the `sfpd_incidents` table to get aggregates of crime based on addresses. The addresses can (hopefully) be used to join this data with the `sffd_service_calls`.
 - Generate variables like the year, month, day and hour of that the call was received by the fire department.
-- If time allows (lol), look into joining the rest of the tables in a similar fashion as the crime table
+- Look into joining the rest of the tables in a similar fashion as the crime table
 
 ## Results
 
