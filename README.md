@@ -28,7 +28,7 @@ Using the distances and time estimates, we built a linear regression model using
 
 In addition to this simple model, data from the `sffd_service_calls` and `sfpd_incidents` tables were used to make more accurate predictions.
 
-Linear Regression showed the best results with 
+Linear Regression using all of the feautures showed the best results with 
 
 R^2:  0.0382449456338
 
