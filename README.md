@@ -1,6 +1,6 @@
 # Predicting Response Times of the San Francisco Fire Department
 
-The goal of this project is to predict the time it will take for the fire department to arrive on the scene of an incident (when applicable).
+The goal of this project is to predict the time it will take for the fire department to arrive on the scene of an incident (when applicable) using Apache Spark.
 
 ## Data
 
