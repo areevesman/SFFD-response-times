@@ -36,4 +36,4 @@ RMSE: 4.82394317574
 
 MAE: 3.3039737344
 
-[This](/notebooks/sffd_m4.large_big.ipynb) outlines our process.
+[This](/notebooks/sffd_m4.large_big.ipynb) notebook outlines our process.
