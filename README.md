@@ -11,7 +11,7 @@ The [data](https://www.kaggle.com/datasf/san-francisco) comes from the San Franc
 Linear regression (regularized and unregularized), decision tree regression and random forest regression models were fit using a few variables from the `sfpd_service_calls` table. They were `battalion`, `station_area`, `call_type`, and `zipcode_of_incident`.
 
 
-- Features for `day_of_week` and `hour_of_day` were created from the original dataset and features for `distance` and `duration` were created using the [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/intro) to get distances and time estimates between each fire station and the addess of the incident. Given a destination and origin, an http request is sent for a json object that contains the variables of interest. A departure time can also be specified (must be "now" or in the future; we used "now" and results were obtained throughout the day on a Saturday).
+Features for `day_of_week` and `hour_of_day` were created from the original dataset and features for `distance` and `duration` were created using the [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/intro) to get distances and time estimates between each fire station and the addess of the incident. Given a destination and origin, an http request is sent for a json object that contains the variables of interest. A departure time can also be specified (must be "now" or in the future; we used "now" and results were obtained throughout the day on a Saturday).
 
 ## Possible Todo's:
 
@@ -30,8 +30,10 @@ In addition to this simple model, data from the `sffd_service_calls` and `sfpd_i
 
 Linear Regression showed the best results with 
 
-$R^2$:  0.0382449456338
-$RMSE$: 4.82394317574
-$MAE$: 3.3039737344
+R^2:  0.0382449456338
+
+RMSE: 4.82394317574
+
+MAE: 3.3039737344
 
 [This](/notebooks/sffd_m4.large_big.ipynb) outlines our process.
