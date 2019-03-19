@@ -32,8 +32,8 @@ Linear Regression showed the best results with
 
 R^2:  0.0382449456338
 
-RMSE: 4.82394317574
+RMSE: 4.82394317574 (minutes)
 
-MAE: 3.3039737344
+MAE: 3.3039737344 (minutes)
 
 [This](/notebooks/sffd_m4.large_big.ipynb) notebook outlines our process.
