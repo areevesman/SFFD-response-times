@@ -39,3 +39,4 @@ We found that the data from the Google Routes API would be the most useful featu
 Using the distances and time estimates, we built a linear regression model using just these two features. This gives interpretable coefficients that measure how one could scale the distance and estimated driving time for a regular driver to figure out what that time looks like for an ambulance or fire truck.
 
 In addition to this simple model, data from the `sffd_service_calls` and `sfpd_incidents` tables were used to make more accurate predictions.
+
