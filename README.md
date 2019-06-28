@@ -30,7 +30,7 @@ MAE: 3.3039737344 (minutes)
 
 Linear regression models consistently took longer to train than tree-based models. Moving from m4.large to m4.xlarge instances cut the model training time in half.
 
-
+![](/images/training_times.png)
 
 ## Conclusions
 
