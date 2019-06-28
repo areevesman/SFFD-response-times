@@ -1,4 +1,4 @@
-# Scalable Real-time Prediction and Analysis ofSan Francisco Fire Department Response Times
+# Predicting Response Times of the San Francisco Fire Department
 
 This repository contains the analysis supporting this research paper:
 
